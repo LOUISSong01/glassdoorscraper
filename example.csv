@@ -1,0 +1,10 @@
+company,company type,hq,industry,size,revenue,ovr_rating,rating_CV,rating_DI,rating_WLB,rating_SM,rating_CB,rating_CO,link
+Amazon,Company - Public (AMZN),"Seattle, WA",Internet & Web Services,10000+ Employees,$10+ billion (USD),3.8,3.7,4.1,3.4,3.5,3.9,3.9,www.amazon.jobs
+Deloitte,Company - Private,"New York, NY",Accounting & Tax,10000+ Employees,$10+ billion (USD),4.1,4,4.2,3.3,3.8,3.8,4.3,www.deloitte.com
+Walmart,Company - Public (WMT),"Bentonville, AR",General Merchandise & Superstores,10000+ Employees,$10+ billion (USD),3.3,3.1,3.6,3,2.8,3.3,3.3,careers.walmart.com
+Infosys,Company - Public (INFY),"Bangalore, India",Information Technology Support Services,10000+ Employees,$10+ billion (USD),3.3,3.2,3.5,3.2,2.9,2.7,3.3,www.infosys.com
+Target,Company - Public (TGT),"Minneapolis, MN",General Merchandise & Superstores,10000+ Employees,$10+ billion (USD),3.6,3.5,4,3.2,3,3.5,3.3,www.target.com
+McDonald's,Company - Public (MCD),"Chicago, IL",Restaurants & Cafes,10000+ Employees,$10+ billion (USD),3.5,3.2,3.7,3.2,3.1,3,3.3,www.mcdonalds.com
+Accenture,Company - Public (ACN),"Dublin, Ireland",Business Consulting,10000+ Employees,$10+ billion (USD),4.1,4.1,4.3,3.8,3.7,3.9,4.1,www.accenture.com
+IBM,Company - Public (IBM),"Armonk, NY",Information Technology Support Services,10000+ Employees,$10+ billion (USD),4.1,4.2,4.4,4.1,3.8,3.6,4.1,www.ibm.com
+Microsoft,Company - Public (MSFT),"Redmond, WA",Computer Hardware Development,10000+ Employees,$10+ billion (USD),4.4,4.4,4.5,4.2,4.1,4.1,4.2,www.microsoft.com/en-gb/
