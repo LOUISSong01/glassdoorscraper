@@ -278,32 +278,3 @@ def scrap(page, until):
 
 # put beginning page and last page to scrape
 scrap(989,999)
-#386 scrape해
-#393
-#526
-#636
-#683
-
-'''
- #need to build the sign-in option
-def google_sign_in(url):
-    driv.get(url)
-    # Wait for the sign-in button to become clickable
-    sign_in_path = "//div[@id='SignInButton']/button[text()='Sign In']"
-    wait.until(EC.element_to_be_clickable((By.XPATH, sign_in_path)))
-    sign_in_path.click()
-
-# Click the sign-in button
-
-google_sign_in('https://www.glassdoor.com/Explore/browse-companies.htm?overall_rating_low=0&page=102')
-'''
-
-
-
-
-
-
-
-
- 
-
