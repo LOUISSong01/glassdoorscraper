@@ -16,6 +16,9 @@ longest.py
 sort.py
 - this code sorts the csv file using a specified attribute
 
+NA.py
+- produces a csv file that only contains companies from USA and Canada.
+
 meta.csv
 - read this to understand each columns of scraped data
 
