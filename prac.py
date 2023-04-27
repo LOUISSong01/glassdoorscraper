@@ -105,7 +105,7 @@ def name_extract(str):
 wait = WebDriverWait(driv, timeout=100, poll_frequency=1, ignored_exceptions=ignore_list)
 
 # for each company...
-def extract_company(company_website):
+def extract_company(company_website, count):
     # overview page scraping using selenium 
     try:
         driv.get(company_website)
@@ -179,7 +179,7 @@ def extract_company(company_website):
             revenue = "N/A"
         else: 
             revenue = driv.find_element(By.XPATH, '//div[@data-test="employer-revenue"]').text
-        
+    
     def check_inflate_reviews():
         try:
             time.sleep(3)
@@ -195,15 +195,10 @@ def extract_company(company_website):
     else:
         wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@data-test="employerReviewsModule"]/div[1]/div[2]')))
         wait.until(EC.visibility_of_element_located((By.XPATH, '//*[@data-test="employerReviewsModule"]/div[1]/div[2]')))
-        time.sleep(11)
+        if(count == 2):
+          time.sleep(15)
         driv.find_element(By.XPATH, '//*[@data-test="employerReviewsModule"]/div[1]/div[2]').click()
         time.sleep(3)
-    '''
-        except:
-            time.sleep(15)
-            wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@data-test="employerReviewsModule"]/div[1]/div[2]')))
-            driv.find_element(By.XPATH, '//*[@data-test="employerReviewsModule"]/div[1]/div[2]').click()
-    '''
 
      
     try:
@@ -262,7 +257,9 @@ def extract_companies(url):
         company_links.append(company_website)
 
     for link in company_links:
-        scrap_result.append(extract_company(link))
+        count = 0
+        scrap_result.append(extract_company(link, count))
+        count++
         print(f"scrapped {len(scrap_result)} companies!! :>")
         print(scrap_result)
         
