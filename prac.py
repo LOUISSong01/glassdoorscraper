@@ -257,7 +257,7 @@ def extract_companies(url):
         company_links.append(company_website)
 
     for link in company_links:
-        count = count + 1
+        ++count
         scrap_result.append(extract_company(link))
         print(f"scrapped {len(scrap_result)} companies!! :>")
         print(scrap_result)
