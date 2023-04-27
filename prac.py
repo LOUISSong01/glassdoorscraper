@@ -194,6 +194,8 @@ def extract_company(company_website):
        time.sleep(5)
     else:
         wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@data-test="employerReviewsModule"]/div[1]/div[2]')))
+        wait.until(EC.visibility_of_element_located((By.XPATH, '//*[@data-test="employerReviewsModule"]/div[1]/div[2]')))
+        time.sleep(11)
         driv.find_element(By.XPATH, '//*[@data-test="employerReviewsModule"]/div[1]/div[2]').click()
         time.sleep(3)
     '''
