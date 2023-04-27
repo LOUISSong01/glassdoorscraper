@@ -258,7 +258,9 @@ def extract_companies(url):
 
     for link in company_links:
         ++count
-        scrap_result.append(extract_company(link))
+        result = extract_company(link)
+        if result is not None:
+            scrap_result.append(result)
         print(f"scrapped {len(scrap_result)} companies!! :>")
         print(scrap_result)
         
@@ -275,4 +277,4 @@ def scrap(page, until):
         df.to_csv('glassdoor2.csv', index=False)
 
 # put beginning page and last page to scrape
-scrap(990,990)
+scrap(990,991)
