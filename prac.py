@@ -103,9 +103,9 @@ def name_extract(str):
     return str
 
 wait = WebDriverWait(driv, timeout=100, poll_frequency=1, ignored_exceptions=ignore_list)
-
+count = 0
 # for each company...
-def extract_company(company_website, count):
+def extract_company(company_website):
     # overview page scraping using selenium 
     try:
         driv.get(company_website)
@@ -257,9 +257,8 @@ def extract_companies(url):
         company_links.append(company_website)
 
     for link in company_links:
-        count = 0
-        scrap_result.append(extract_company(link, count))
-        count++
+        count = count + 1
+        scrap_result.append(extract_company(link))
         print(f"scrapped {len(scrap_result)} companies!! :>")
         print(scrap_result)
         
@@ -276,4 +275,4 @@ def scrap(page, until):
         df.to_csv('glassdoor2.csv', index=False)
 
 # put beginning page and last page to scrape
-scrap(989,999)
+scrap(990,990)
