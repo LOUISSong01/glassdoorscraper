@@ -113,7 +113,7 @@ def extract_company(company_website):
 
         company_name = name_extract(driv.find_element(By.XPATH, '//*[@data-test="employerOverviewHeader"]').text)
 
-        if(company_name == "MISSING VALUE" || company_name == "Webilent Technology"):
+        if(company_name == "MISSING VALUE" or company_name == "Webilent Technology"):
             return 
         else:
             if(missing_sec('//div[@data-test="employer-size"]')):
